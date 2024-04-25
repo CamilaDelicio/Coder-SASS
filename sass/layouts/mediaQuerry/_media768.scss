@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+    .primeraSeccion {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .primeraSeccion-texto h2 {
+        font-size: 60px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .primeraSeccion-texto p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .primeraSeccion img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .Productos-Inicio {
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start; 
+    }
+
+    .producto-texto p {
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: left; /* Alinear el texto a la izquierda en pantallas pequeñas */
+    }
+
+    .producto-imagen img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .boton-NuestrosProductos {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+@media (max-width: 768px) {
+    .coco-fondo img {
+        height: auto; 
+    }
+    .texto-sobre-imagen {
+        font-size: 1.5em; 
+    }
+    .boton-Conocenos {
+        font-size: 1.5em; 
+    }
+}
+@media (max-width: 768px) {
+    .texto-contacto {
+        font-size: 7vw;
+        padding-left: 0; 
+    }
+
+    .boton-Contáctanos {
+        width: 80%; 
+        font-size: 5vw; 
+    }
+}
+@media (max-width: 768px) {
+    .Crema {
+        width: calc(50% - 20px); 
+        margin-right: 20px; 
+    }
+
+    .Crema button {
+        font-size: 14px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .descubre-nosotros {
+        font-size: 25px; 
+    }
+
+    .boton-descubre {
+        width: 250px; 
+    }
+}

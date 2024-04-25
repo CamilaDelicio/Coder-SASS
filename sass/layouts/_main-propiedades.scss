@@ -1,0 +1,139 @@
+.portada-propiedades img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+}
+.conteiner-propiedades{
+    background-color:#EFEDFF;
+    padding: 100px;
+    
+    
+}
+.propiedades {
+    background-color: #8D8CC1;
+    padding: 100px;
+    border: 20px solid white; 
+}
+.introduccion{
+    background-color: #EFEDFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 20px;
+    text-align: center;
+}
+
+.sabias-que {
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sabias-que-texto {
+    background-color: #D7D2FF;
+    padding: 10px;
+}
+.sabias-que h5 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.sabias-que p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.img-lavanda{
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 300px; 
+    transform: rotate(15deg);
+    border-radius: 5px; 
+    background-color: white;
+}
+    
+.img-lavanda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+    transform: rotate(15deg); /* Contrarrestar la inclinación para que la imagen parezca recta */
+}
+.Aguademar{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-aguademar {
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 300px; 
+    transform: rotate(-20deg);
+    border-radius: 5px; 
+    background-color: white;
+}
+.img-aguademar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+    transform: rotate(5deg);
+}
+.texto-agua {
+    background-color: #D7D2FF;
+    padding: 30px;
+}
+.texto-agua h3 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.texto-agua p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.aceitejojoba {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-jojoba {
+    background-color: #D7D2FF;
+    padding: 50px;
+    margin: 20px;
+}
+.texto-jojoba h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.texto-jojoba p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.imgJojoba{
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 350px;     
+}
+    
+.imgJojoba img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+}
