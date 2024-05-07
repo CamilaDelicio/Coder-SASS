@@ -1,6 +1,8 @@
 @import "./utilities/maps";
+@import "./utilities/mixins";
 @import "./utilities/variables";
 @import "./base/reset";
+@import "./base/typografias";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/main-index.scss";
@@ -8,9 +10,9 @@
 @import "./components/cards";
 @import "./layouts/main-nosotros";
 @import "layouts/main-contacto";
-@import "./base/typografias";
 @import "./layouts/main-propiedades";
 @import "./layouts/mediaQuerry/media768";
+@import "./layouts/mediaQuerry/media320";
 
 
 

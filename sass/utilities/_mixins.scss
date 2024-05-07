@@ -1,0 +1,18 @@
+@mixin estilos-texto($tamano, $color, $alineacion) {
+    font-size: $tamano;
+    color: $color;
+    text-align: $alineacion;
+  }
+
+  @mixin estilos-boton( $fondo-normal, $fondo-hover, $borde, $color) {
+    background-color: $fondo-normal;
+    border: $borde;
+    color: $color;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+    
+    &:hover {
+      background-color: $fondo-hover;
+      transform: scale(1.1);
+    }
+  }

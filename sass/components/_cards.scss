@@ -2,12 +2,12 @@
     width: calc(33.33% - 50px);
     max-width: 350px;
     height: 450px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: .125rem solid #ccc;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 .3125rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    margin-bottom: 3.125rem;
+    margin-right: 3.125rem;
     background-color: #EEEDED;
   
     div {
@@ -20,28 +20,38 @@
       height: 100%;
       overflow: hidden;
       object-fit: cover;
+      transition: transform 0.7s ease;
     }
   
     p {
-      margin-top: 0px;
+      margin-top: 0rem;
       font-family: "Roboto";
-      font-size: 25px;
+      font-size: 1.5625rem;
       text-align: center;
-      padding: 5px;
+      padding: .3125rem;
     }
   
     button {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: 18px;
-      margin-top: -50px;
-      margin-left: 120px;
-      padding: 5px;
-      border-radius: 5px;
+      font-size: 1.125rem;
+      margin-top: -3.125rem;
+      margin-left: 7.5rem;
+      padding: .3125rem;
+      border-radius: .3125rem;
       background-color: #FFD972;
+      text-decoration: none;
+      a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: black;
+    }
   
       &:hover {
         background-color: #EEEDED;
       }
     }
+    &:hover {
+      div img {
+        transform: scale(0.95); 
+      }
   }
-  
+}

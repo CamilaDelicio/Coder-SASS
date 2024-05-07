@@ -3,17 +3,6 @@
         flex-direction: column;
         height: auto;
     }
-    
-    .primeraSeccion-texto h2 {
-        font-size: 60px;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .primeraSeccion-texto p {
-        font-size: 30px;
-        text-align: center;
-    }
 
     .primeraSeccion img {
         width: 100%;
@@ -25,12 +14,6 @@
         flex-direction: column;
         height: auto;
         justify-content: flex-start; 
-    }
-
-    .producto-texto p {
-        font-size: 30px;
-        margin-top: 30px;
-        text-align: left; /* Alinear el texto a la izquierda en pantallas pequeñas */
     }
 
     .producto-imagen img {
@@ -55,11 +38,6 @@
     }
 }
 @media (max-width: 768px) {
-    .texto-contacto {
-        font-size: 7vw;
-        padding-left: 0; 
-    }
-
     .boton-Contáctanos {
         width: 80%; 
         font-size: 5vw; 
@@ -80,8 +58,28 @@
     .descubre-nosotros {
         font-size: 25px; 
     }
+}
 
-    .boton-descubre {
-        width: 250px; 
+@media (min-width: 768px) {
+    .Crema {
+        width: calc(33.33% - 30px); 
+        max-width: 350px; 
+        height: 400px; 
+        margin-bottom: 2rem; 
+        margin-right: 2rem; 
+    }
+
+    .Crema button {
+        margin-left: 50%; 
+        transform: translateX(-50%); 
+        font-size: 1rem; 
+        padding: 0.5rem 1rem; 
     }
 }
+
+
+
+
+
+
+

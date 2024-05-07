@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     background-color: #8D8CC1;
-    padding: 10px; 
+    padding: .625rem; 
     
     .logo {
-        max-width: 50px;
+        max-width: 3.125rem;
 
         img {
             height: auto;
-            width: 80px;
+            width: 6.25rem;
         }
     }
 
@@ -27,6 +27,11 @@
                     font-family: "Roboto";
                     font-size: 30px;
                     text-decoration: none;
+                    transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+                }
+                 &:hover {
+                    transform: scale(1.1); 
+                    font-size: 2rem; 
                 }
             }
         }
