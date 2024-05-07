@@ -1,17 +1,961 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 16 | @import "../assets/";
- *    |         ^^^^^^^^^^^^
- *    '
- *   sass\style.scss 16:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 16 \2502  @import \"../assets/\";\d\a    \2502          ^^^^^^^^^^^^\a    \2575 \a   sass\\style.scss 16:9  root stylesheet";
+@charset "UTF-8";
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #8D8CC1;
+  padding: 0.625rem;
 }
+.navbar .logo {
+  max-width: 3.125rem;
+}
+.navbar .logo img {
+  height: auto;
+  width: 6.25rem;
+}
+.navbar .nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px 30px;
+}
+.navbar .nav ul li {
+  padding: 10px 10px;
+}
+.navbar .nav ul li a {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+}
+.navbar .nav ul li:hover {
+  transform: scale(1.1);
+  font-size: 2rem;
+}
+
+.Footer-index {
+  background-color: #8D8CC1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  padding: 1.25rem;
+  margin-top: 3.125rem;
+}
+
+.enlaces {
+  font-family: "Roboto";
+  color: white;
+  margin-top: 0.3125rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.enlaces p {
+  text-decoration: none;
+  font-size: 1.875rem;
+  margin-top: 1.2rem;
+  color: #fff;
+}
+.enlaces ul li {
+  list-style-type: none;
+  margin-top: 0.3125rem;
+}
+.enlaces ul li a {
+  text-decoration: none;
+  font-size: 1.5625rem;
+  color: white;
+  padding-left: 1.875rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.enlaces ul li a:hover {
+  background-color: black;
+}
+
+.redes-sociales {
+  text-align: center;
+  margin-left: 21.875rem;
+  margin-top: 1.25rem;
+}
+
+.redes-sociales p {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.875rem;
+  margin-bottom: 0;
+}
+
+.redes-sociales img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.redes-sociales a:hover img {
+  text-decoration: overline !important;
+}
+
+.Imagen-footer {
+  margin-left: 15.625rem;
+}
+.Imagen-footer img {
+  height: 100px;
+  width: 250px;
+  padding: -50rem 6.25rem;
+  margin: 3.125rem 3.125rem -1.25rem 0;
+}
+.Imagen-footer p {
+  font-family: "Rochester";
+  font-size: 2.1875rem;
+  color: white;
+}
+
+.portada img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.primeraSeccion {
+  display: flex;
+  background-color: #EFEDFF;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 3.125rem;
+}
+
+.primeraSeccion-texto {
+  flex: 1;
+  padding: 20px;
+  font-family: "Rochester", cursive;
+}
+.primeraSeccion-texto h2 {
+  font-size: 100px;
+  font-weight: normal;
+  color: #943F77;
+  padding-left: 110px;
+  font-family: "Rochester", cursive;
+  margin-top: 40px;
+}
+.primeraSeccion-texto p {
+  font-size: 40px;
+  font-weight: normal;
+  color: black;
+  font-family: "Pompiere";
+  margin-top: -50px;
+}
+
+.primeraSeccion img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.Productos-Inicio {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.producto-texto {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+}
+.producto-texto p {
+  font-family: "Poppins";
+  text-align: left;
+  font-size: 2.2rem;
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.producto-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.producto-imagen img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin-right: 5rem;
+}
+
+.boton-NuestrosProductos {
+  background-color: #D3C4F2;
+  color: black;
+  border: 4px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+  height: 90px;
+  margin-left: 0.625rem;
+  margin-top: -1.5625rem;
+}
+.boton-NuestrosProductos:active {
+  background-color: white;
+}
+.boton-NuestrosProductos:hover {
+  background-color: #943F77;
+}
+.boton-NuestrosProductos a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: "roboto";
+  font-weight: bold;
+}
+
+.coco-fondo {
+  position: relative;
+  border: 0.375rem solid black;
+  border-radius: 0.3125rem;
+}
+
+.coco-fondo img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center calc(50% - 15.625rem);
+}
+
+.texto-sobre-imagen {
+  position: absolute;
+  top: 30%;
+  right: 1%;
+  transform: translateY(-50%);
+  text-align: right;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 1.75rem;
+  color: white;
+  padding: 2rem;
+  width: 40%;
+  max-width: calc(100% - 10vw);
+  z-index: 1;
+}
+
+.boton-Conocenos a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto";
+}
+
+.boton-Conocenos {
+  position: absolute;
+  background-color: #fff;
+  border: 0.1875rem solid black;
+  padding: 0.625rem 1.875rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  text-decoration: none;
+  top: 6.25rem;
+  right: 9.375rem;
+  border-radius: 1.5625rem;
+  margin-top: 6.875rem;
+}
+.boton-Conocenos:hover {
+  background-color: #8d8cc5;
+}
+
+.Seccion-contacto {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 0.625rem;
+  margin: 0.625rem -3.125rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.texto-contacto {
+  font-size: 2.1875rem;
+  font-family: "Poppins";
+  color: black;
+  text-align: center;
+  padding-left: 12.5rem;
+}
+
+.boton-Contáctanos {
+  background-color: #943F77;
+  color: black;
+  border: 0.25rem solid black;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  margin-left: 0rem;
+  margin-top: 1.125rem;
+  border-radius: 1.5625rem;
+}
+.boton-Contáctanos a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.1875rem;
+  font-family: "Roboto";
+  transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+}
+.boton-Contáctanos:hover {
+  transform: scale(1.1);
+}
+
+.portada-productos img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.productos {
+  width: 100%;
+  height: 80px;
+  border: 0.1875rem solid #ccc;
+  border-radius: 0rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos p {
+  font-size: 3.125rem;
+  text-align: center;
+  font-family: "Rochester";
+  padding: 0.625rem;
+  margin: 0.3125rem;
+}
+
+.Catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EFEDFF;
+  padding: 3.125rem;
+}
+
+.Crema {
+  width: calc(33.33% - 50px);
+  max-width: 350px;
+  height: 450px;
+  border: 0.125rem solid #ccc;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-bottom: 3.125rem;
+  margin-right: 3.125rem;
+  background-color: #EEEDED;
+}
+.Crema div {
+  width: 100%;
+  height: 75%;
+}
+.Crema div img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+.Crema p {
+  margin-top: 0rem;
+  font-family: "Roboto";
+  font-size: 1.5625rem;
+  text-align: center;
+  padding: 0.3125rem;
+}
+.Crema button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.125rem;
+  margin-top: -3.125rem;
+  margin-left: 7.5rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  background-color: #FFD972;
+  text-decoration: none;
+}
+.Crema button a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: black;
+}
+.Crema button:hover {
+  background-color: #EEEDED;
+}
+.Crema:hover div img {
+  transform: scale(0.95);
+}
+
+.portada-nosotros img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.quienes-somos {
+  background-color: #EFEDFF;
+  padding: 3.125rem;
+  height: 1550px;
+}
+
+.pregunta {
+  background-color: #9FC7AA;
+  border: 0.3125rem solid #A1A1A1;
+  width: 400px;
+  height: 100px;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+}
+.pregunta h1 {
+  text-align: center;
+  font-family: "Rochester";
+  font-weight: normal;
+  font-size: 3.75rem;
+  margin: 1.25rem;
+}
+
+.texto-quienes-somos {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  text-align: left;
+  padding-top: 3.125rem;
+}
+.texto-quienes-somos img {
+  margin-top: -15.625rem;
+  margin-left: 0rem;
+  width: 31.25rem;
+  object-fit: cover;
+}
+
+.que-hacemos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #EFEDFF;
+  padding: 3.125rem;
+}
+
+.texto-que-hacemos {
+  display: flex;
+  justify-content: space-between;
+}
+.texto-que-hacemos p {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  text-align: right;
+  padding-top: 3.125rem;
+}
+.texto-que-hacemos img {
+  margin-top: -9.375rem;
+  width: 1000px;
+}
+
+.conteiner-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.descubre-nosotros {
+  background: linear-gradient(to right, #637D6A, #8AAC93, #9FC7AA);
+  color: #000;
+  border-radius: 0.9375rem;
+  width: 1000px;
+  height: 250px;
+  font-family: "Roboto";
+  font-size: 2.1875rem;
+  text-align: center;
+  padding: 0.9375rem;
+}
+.descubre-nosotros .boton-descubre {
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: -0.9375rem;
+  margin-top: -0.9375rem;
+  font-size: 2.8125rem;
+  background-color: #698671;
+  color: white;
+  border: 3px solid black;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  width: 21.875rem;
+  font-weight: 37.5rem;
+}
+.descubre-nosotros .boton-descubre:hover {
+  background-color: #9EB0A2;
+}
+
+.portada-contacto img {
+  width: 100%;
+  height: 250px;
+  padding: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  object-fit: cover;
+}
+
+.formulario-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("/assets/Fondo-contacto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1500px;
+  flex-direction: column;
+}
+.formulario-base p {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+  justify-content: center;
+  padding-top: 6.25rem;
+  padding-left: 10.625rem;
+  padding-right: 10.625rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #943F77;
+  color: white;
+  font-family: "Roboto";
+  height: 850px;
+  width: 850px;
+  margin-top: 5.625rem;
+  border-radius: 2.5rem;
+  font-size: 2.1875rem;
+  padding: 3.125rem;
+}
+.formulario h1 {
+  font-size: 3.125rem;
+  padding-top: 3.125rem;
+}
+.formulario .nombre-apellido {
+  display: flex;
+  justify-content: column;
+  padding: 1.25rem;
+}
+.formulario input[type=text] {
+  margin-right: 0.625rem;
+  width: calc(100% - 50px);
+  padding: 0.625rem;
+}
+.formulario input[type=email] {
+  width: 620px;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.formulario .consulta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.625rem;
+}
+.formulario textarea {
+  width: 620px;
+  height: 250px;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.formulario .boton-enviar {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  font-family: "Roboto";
+  border: 3px solid black;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 3.125rem;
+}
+.formulario .boton-enviar:hover {
+  background-color: black;
+  color: white;
+}
+
+.portada-propiedades img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+
+.conteiner-propiedades {
+  background-color: #EFEDFF;
+  padding: 6.25rem;
+}
+
+.propiedades {
+  background-color: #8D8CC1;
+  padding: 6.25rem;
+  border: 1.25rem solid white;
+}
+
+.introduccion {
+  background-color: #EFEDFF;
+  font-family: "Poppins";
+  font-size: 1.5625rem;
+  font-weight: normal;
+  padding: 0.3125rem;
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.sabias-que-texto {
+  background-color: #D7D2FF;
+  padding: 0.3125rem;
+  margin: 1.25rem;
+}
+
+.sabias-que {
+  padding: 0.9375rem;
+  margin: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sabias-que h5 {
+  font-family: "roboto sherif";
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+.sabias-que p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.img-lavanda {
+  position: relative;
+  margin-top: 3.125rem;
+  width: 1000px;
+  height: 300px;
+  transform: rotate(15deg);
+  border-radius: 0.3125rem;
+  background-color: white;
+}
+.img-lavanda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1.25rem solid white;
+  box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3);
+  transform: rotate(15deg); /* Contrarrestar la inclinación para que la imagen parezca recta */
+}
+
+.Aguademar {
+  padding: 0.625rem;
+  margin: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-aguademar {
+  position: relative;
+  margin-top: 3.125rem;
+  width: 1000px;
+  height: 300px;
+  transform: rotate(-20deg);
+  border-radius: 0.3125rem;
+  background-color: white;
+}
+.img-aguademar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1.25rem solid white;
+  box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3);
+  transform: rotate(5deg);
+  margin: 0.625rem;
+}
+
+.texto-agua {
+  background-color: #D7D2FF;
+  padding: 1.875rem;
+}
+.texto-agua h3 {
+  font-family: "roboto sherif";
+  font-size: 2.5rem;
+  text-align: center;
+  margin: -0.625rem;
+}
+.texto-agua p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.aceitejojoba {
+  padding: 0.625rem;
+  margin: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-jojoba {
+  background-color: #D7D2FF;
+  padding: 3.125rem;
+  margin: 1.25rem;
+}
+
+.texto-jojoba h2 {
+  font-family: "roboto sherif";
+  font-size: 2.5rem;
+  text-align: center;
+  margin: -0.625rem;
+}
+
+.texto-jojoba p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.imgJojoba {
+  position: relative;
+  margin-top: 3.125rem;
+  width: 1000px;
+  height: 350px;
+}
+
+.imgJojoba img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1.25rem solid white;
+  box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3);
+}
+
+@media (max-width: 768px) {
+  .primeraSeccion {
+    flex-direction: column;
+    height: auto;
+  }
+  .primeraSeccion img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .Productos-Inicio {
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .producto-imagen img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .boton-NuestrosProductos {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 768px) {
+  .coco-fondo img {
+    height: auto;
+  }
+  .texto-sobre-imagen {
+    font-size: 1.5em;
+  }
+  .boton-Conocenos {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  .boton-Contáctanos {
+    width: 80%;
+    font-size: 5vw;
+  }
+}
+@media (max-width: 768px) {
+  .Crema {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
+  .Crema button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .descubre-nosotros {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .Crema {
+    width: calc(33.33% - 30px);
+    max-width: 350px;
+    height: 400px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .Crema button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .primeraSeccion {
+    flex-direction: column;
+    height: auto;
+  }
+  .primeraSeccion-texto h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .primeraSeccion-texto p {
+    text-align: center;
+  }
+  .primeraSeccion img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .Productos-Inicio {
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .producto-texto p {
+    text-align: left;
+  }
+  .producto-imagen img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .boton-NuestrosProductos {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  .coco-fondo img {
+    height: auto;
+  }
+  .boton-Conocenos {
+    font-size: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .texto-contacto {
+    font-size: 6vw;
+    padding-left: 0;
+  }
+  .boton-Contáctanos {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  .Crema {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .boton-descubre {
+    width: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .portada-productos img {
+    height: auto;
+  }
+  .productos {
+    height: 80px;
+    border-radius: 0;
+    margin: 0.5rem;
+  }
+  .Catalogo {
+    padding: 1rem;
+  }
+  .Crema {
+    width: calc(50% - 20px);
+    max-width: 300px;
+    height: 350px;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+  }
+  .Crema p {
+    font-size: 1rem;
+  }
+  .Crema button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .portada-nosotros img {
+    width: 100%;
+    height: auto;
+  }
+  .pregunta {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .texto-quienes-somos {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .texto-quienes-somos img {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 90%;
+  }
+  .texto-que-hacemos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto-que-hacemos p {
+    text-align: center;
+  }
+  .boton-descubre {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .portada-contacto img {
+    height: auto;
+    padding: 0.3125rem;
+    box-shadow: none;
+  }
+  .formulario-base {
+    padding-top: 3.125rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .formulario {
+    width: 90%;
+    margin-top: 1.875rem;
+    padding: 1.25rem;
+  }
+  .nombre-apellido {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
